@@ -8,7 +8,7 @@ This script extracts historical monthly climate data (in NetCDF format) from the
 The required libraries `openpyxl` and `netCDF4` are installed for:
 - Reading city-level data from an Excel file (`cities_ESP.xlsx`).
 - Accessing climate data from the Copernicus global NetCDF file (`global.nc`).
-- The global.nc data has not been uploaded here due to storage constraints, however if you follow the steps in 01_extraction, it should work
+- The global.nc data has not been uploaded here due to storage constraints, however if you follow the steps in 01_download, it should work
 
 ### 2. Load City Data: 
 The cities_ESP.xlsx file is loaded, which contains the latitude and longitude coordinates of cities. This data is used to extract climate time series for each city.
