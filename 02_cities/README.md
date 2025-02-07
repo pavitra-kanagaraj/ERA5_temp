@@ -8,7 +8,7 @@ This script extracts historical monthly climate data (in NetCDF format) from the
 The required libraries `openpyxl` and `netCDF4` are installed for:
 - Reading city-level data from an Excel file (`IND_cities.xlsx`).
 - Accessing climate data from the Copernicus global NetCDF file (`global.nc`).
-- *Note: The global.nc data is not uploaded here due to storage constraints. However, following the steps in 01_download will allow access to the dataset.*
+- *Note: The global.nc data is not uploaded here due to storage constraints. However, following the steps in 01_download will allow access to the dataset. The process was performed with the help of Kaggle's GPU*
 
 ### 2. Load City Data: 
 The IND_cities.xlsx file, which contains the latitude and longitude coordinates of Indian cities, is loaded.
