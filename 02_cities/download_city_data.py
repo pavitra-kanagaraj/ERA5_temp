@@ -8,7 +8,7 @@ import datetime
 import os
 
 # Load city data with latitude and longitude coordinates
-df = pd.read_excel('/kaggle/input/cities-esp/cities_ESP.xlsx', index_col=0)
+df = pd.read_excel('/kaggle/input/cities-esp/IND_cities.xlsx', index_col=0)
 
 # Load the NetCDF global climate data
 data = nc.Dataset("/kaggle/input/monthly/global.nc")
