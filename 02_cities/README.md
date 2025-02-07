@@ -12,7 +12,7 @@ The required libraries `openpyxl` and `netCDF4` are installed for:
 
 ### 2. Load City Data: 
 The IND_cities.xlsx file, which contains the latitude and longitude coordinates of Indian cities, is loaded.
-- The city coordinates were obtained from the **SEDEC Population Grid**, which originally provided shapefiles.
+- The city coordinates were obtained from the **SEDAC Gridded Population of the World v4**, which originally provided shapefiles.
 - These shapefiles were converted into an Excel file (IND_cities.xlsx) to facilitate data extraction.
 
 ### 3. Access Copernicus Global Data:
