@@ -11,8 +11,8 @@ The required libraries `openpyxl` and `netCDF4` are installed for:
 - *Note: The global.nc data is not uploaded here due to storage constraints. However, following the steps in 01_download will allow access to the dataset.*
 
 ### 2. Load City Data: 
-The IND_cities.xlsx file, which contains latitude and longitude coordinates of Indian cities, is loaded.
-- The city coordinates were obtained from the ** SEDEC Population Grid**, which originally provided shapefiles.
+The IND_cities.xlsx file, which contains the latitude and longitude coordinates of Indian cities, is loaded.
+- The city coordinates were obtained from the **SEDEC Population Grid**, which originally provided shapefiles.
 - These shapefiles were converted into an Excel file (IND_cities.xlsx) to facilitate data extraction.
 
 ### 3. Access Copernicus Global Data:
