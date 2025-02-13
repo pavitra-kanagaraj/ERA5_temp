@@ -1,7 +1,7 @@
 # ERA5 Weather-Inflation Analysis
 
 ## Overview
-This project analyzes the impact of weather shocks on inflation using ERA5 reanalysis data. The study uses local projection methods and spans over 7 million spatial observations across Germany, India, and Spain.
+This project computes the temperature shock for India using ERA5 reanalysis dataset.
 
 ## Data
 - **Source:** ERA5 Reanalysis Data (from ECMWF)
