@@ -7,17 +7,8 @@ This project analyzes the impact of weather shocks on inflation using ERA5 reana
 - **Source:** ERA5 Reanalysis Data (from ECMWF)
 - **Format:** NetCDF, CSV
 
-## Methodology
-- Extract weather data (temperature, precipitation)
-- Aggregate and clean the data
-- Conduct time-series and spatial econometric analysis
-- Visualize key findings
-
 ## Repository Structure
-- `data/`: Raw and processed datasets
-- `notebooks/`: Jupyter notebooks for analysis
-- `scripts/`: Python scripts for automation
+- `01_download/`: Extract historical data on monthly temperature from Copernicus Climate Data Store (CDS) in NetCDF format
+- `02_cities/`: Generates a time series on monthly temperature for a specific set of cities for each country
+- `03_cities_aggregation/`: Aggregates the city-level temperature data using population weights to determine each country's monthly average from 1995 to 2023. And compute the monthly temperature deviation from the past five-year average.
 
-## Installation
-```bash
-pip install -r requirements.txt
