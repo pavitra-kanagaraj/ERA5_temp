@@ -1,7 +1,7 @@
 # ERA5 Weather-Inflation Analysis
 
 ## Overview
-This project computes the temperature shock for India using ERA5 reanalysis dataset.
+This project computes the temperature shock for India using ERA5 reanalysis dataset. Temperature shock is defined as the monthly temperature deviation from its past five-year average
 
 ## Data
 - **Source:** ERA5 Reanalysis Data (from ECMWF)
