@@ -76,15 +76,7 @@ cleaned_df['Date-Time'] = pd.to_datetime(cleaned_df['Date-Time'])
 cleaned_df['Year'] = cleaned_df['Date-Time'].dt.year
 cleaned_df['Month'] = cleaned_df['Date-Time'].apply(lambda x: str(x)[8:10])
 cleaned_df['Month'] = cleaned_df['Month'].astype(int)
-
 cleaned_df
-# Group the data by both 'Year' and 'Month' and calculate the sum of temperature for each group
-monthly_sum_temp = cleaned_df.groupby(['Year', 'Month'])['Temp(C)'].mean()
-# Reset index to include 'Month' as a column
-monthly_sum_temp_1 = monthly_sum_temp.reset_index()
-
-# Save the averaged monthly DataFrame as an Excel file
-monthly_sum_temp_1.to_excel('Output/IND_AVE_MONTH.xlsx', index=False)
 
 # Step 3: Population weighted-average of temperature
 # Load the population data
@@ -137,6 +129,7 @@ population_weighted_avg_df.to_excel('Output/weighted_avg_temp.xlsx', index=False
 # Convert 'Year' and 'Month' to datetime format
 population_weighted_avg_df['Date'] = pd.to_datetime(population_weighted_avg_df['Year'].astype(str) + '-' + population_weighted_avg_df['Month'].astype(str) + '-01')
 population_weighted_avg_df
+
 # Iterate through each year and month from 2000 to 2023
 for year in range(2005, 2024):  # Starting from 2000 instead of 1999
     for month in range(1, 13):
